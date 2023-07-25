@@ -16,6 +16,8 @@
             Veniam in eaque atque minima quas, itaque, harum blanditiis vero quia doloremque quaerat dolorem obcaecati fugit repellendus accusantium iure ipsam eos? Tempora reiciendis impedit quasi accusamus similique quas. Obcaecati, ipsum!
             In voluptatem eligendi mollitia officia vitae modi! Eligendi in sed cupiditate ea deserunt consequatur doloremque explicabo, porro cum adipisci at molestias qui esse quaerat. Hic excepturi explicabo deserunt soluta autem.
             Consequuntur earum, temporibus culpa dolorem obcaecati maiores molestiae dolore aliquid repellat aut laudantium, fugit reiciendis in fuga voluptatum ab delectus inventore ullam repudiandae sed quia. Quidem eligendi fuga quisquam quis.
+            
+          <br><br>  <a href="contact.php"><img src="" alt="img">press here</a>
         </p>
     </div>
 </body>

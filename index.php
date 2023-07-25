@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>index</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -13,31 +13,8 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body style="width:100%;">
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Project</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" >Events</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- navbar Ends -->
+<?php include './includes/nav.php';?>
+
 <!-- carousel starts -->
 <div class="container-fluid mt-5">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -64,8 +41,8 @@
       <!-- Carousel ends here -->
       <!-- breadcrumb starts -->
       <ul class="breadcrumb mt-3">
-        <li><a href="/pictures.html">Home</a></li>
-        <li><a href="#">Pictures</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="pictures.php">Pictures</a></li>
         <li><a href="#">Blog</a></li>
         <li>Kenya</li>
       </ul>
@@ -134,279 +111,11 @@
           </div>
           
     </div>
-    <div class="container mt-5">
-        <h3 class="text-center mt-5 mb-5 text-uppercase">Portfolio</h3>
 
-        <div class="row justify-content-center align-items-center g-2">
-            <div class="col-8">
-                <p>
-                 Your privacy is important to us. This privacy statement explains the personal data Microsoft processes, how Microsoft processes it, and for what purposes 
-                 Microsoft offers a wide range of products, including server products used to help operate enterprises worldwide, devices you use in your home, software that students use at school, and services developers use to create and host what’s next. References to Microsoft products in this statement include Microsoft services, websites, apps, software, servers, and devices.
-                 
-                 Please read the product-specific details in this privacy statement, which provide additional relevant information. This statement applies to the interactions Microsoft has with you and the Microsoft products listed below, as well as other Microsoft products that display this statement.
-                 
-                 Young people may prefer starting with the Privacy for young people page. That page highlights information that may be helpful for young people.
-                </p>
-              
-            </div>
-            <div class="col-4">
-              <img src="/assets/images/slider-img-1.jpg" height="250px" width="350px">
-                
-            </div>
-        </div>
+    <!-- Team Section -->
+       <!-- card -->
 
-        
-    </div>
-    <div class="container mt-5 mb-5">
-      <div class=" mt-5 mb-5">
-        <h3 class="text-center text-uppercase">contact us</h3>
-
-<!--Section: Contact v.2-->
-<section class="mb-4">
-  <!--Section description-->
-  <p class="text-center w-responsive mx-auto mb-5 mt-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-      a matter of hours to help you.</p>
-
-  <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Your name</label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Your email</label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Subject</label>
-                      </div>
-                  </div>
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Grid row-->
-
-          </form>
-
-          <div class="text-center text-md-left">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-          </div>
-          <div class="status"></div>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
-              <li><i class="bi bi-map-marker-alt fa-2x"></i>
-                  <p>Nyeri, CA 94126,KENYA</p>
-              </li>
-
-              <li><i class="bi bi-telephone mt-4 fa-2x"></i>
-                  <p>+ 01 234 567 89</p>
-              </li>
-
-              <li><i class="bi bi-envelope mt-4 fa-2x"></i>
-                  <p>contact@mdbootstrap.com </i> </p>
-              </li>
-          </ul>
-      </div>
-      <!--Grid column-->
-
-  </div>
-
-</section>
-<!--Section: Contact v.2-->
-      </div>
-
-      
-
-    </div>
-    <div class="container-fluid my-5">
-      <!-- Footer -->
-      <footer
-              class="text-center text-lg-start text-dark"
-              style="background-color: #ECEFF1"
-              >
-        <!-- Section: Social media -->
-        <section
-                 class="d-flex justify-content-between p-4 text-white"
-                 style="background-color: #949494"
-                 >
-          <!-- Left -->
-          <div class="me-5">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          <!-- Left -->
-    
-          <!-- Right -->
-          <div>
-            <a href="" class="text-white me-4">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="" class="text-white me-4">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="" class="text-white me-4">
-              <i class="bi bi-google"></i>
-            </a>
-            <a href="" class="text-white me-4">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="" class="text-white me-4">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="" class="text-white me-4 ">
-              <i class="bi bi-github"></i>
-            </a>
-          </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-    
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold">Company name</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                    />
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Products</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                    />
-                <p>
-                  <a href="#!" class="text-dark">MDBootstrap</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">MDWordPress</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">BrandFlow</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">Bootstrap Angular</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Useful links</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                    />
-                <p>
-                  <a href="#!" class="text-dark">Your Account</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">Become an Affiliate</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">Shipping Rates</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-dark">Help</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Contact</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                    />
-                <p><i class="bi bi-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="bi bi-envelope mr-3"></i> info@example.com</p>
-                <p><i class="bi bi-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="bi bi-print mr-3"></i> + 01 234 567 89</p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </section>
-        <!-- Section: Links  -->
-    
-        <!-- Copyright -->
-        <div
-             class="text-center p-3"
-             style="background-color: rgba(0, 0, 0, 0.2)"
-             >
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/"
-             >MDBootstrap.com</a
-            >
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
-    </div>
-    <!-- End of .container -->
-
-    <!-- card -->
-
-    <section id="team" class="pb-5">
+       <section id="team" class="pb-5">
       <div class="container">
           <h5 class="section-title h1">OUR TEAM</h5>
                                       <p class="card-text">This is basic card with image on top, title, description and button.</p>
@@ -614,8 +323,135 @@
   <!-- Team -->
 
 
+    <!-- TEam section End -->
+    <div class="container mt-5">
+        <h3 class="text-center mt-5 mb-5 text-uppercase">Portfolio</h3>
+
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-8">
+                <p>
+                 Your privacy is important to us. This privacy statement explains the personal data Microsoft processes, how Microsoft processes it, and for what purposes 
+                 Microsoft offers a wide range of products, including server products used to help operate enterprises worldwide, devices you use in your home, software that students use at school, and services developers use to create and host what’s next. References to Microsoft products in this statement include Microsoft services, websites, apps, software, servers, and devices.
+                 
+                 Please read the product-specific details in this privacy statement, which provide additional relevant information. This statement applies to the interactions Microsoft has with you and the Microsoft products listed below, as well as other Microsoft products that display this statement.
+                 
+                 Young people may prefer starting with the Privacy for young people page. That page highlights information that may be helpful for young people.
+                </p>
+              
+            </div>
+            <div class="col-4">
+              <img src="/assets/images/slider-img-1.jpg" height="250px" width="350px">
+                
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class=" mt-5 mb-5">
+        <h3 class="text-center text-uppercase">contact us</h3>
+
+<!--Section: Contact v.2-->
+<section class="mb-4">
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5 mt-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="">Your name</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="email" class="">Your email</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <label for="subject" class="">Subject</label>
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                    <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+
+            <div class="text-center text-md-left">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+        <div class="status"></div>
+    </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-map-marker-alt fa-2x"></i>
+                  <p>Nyeri, CA 94126,KENYA</p>
+              </li>
+
+              <li><i class="bi bi-telephone mt-4 fa-2x"></i>
+                  <p>+ 01 234 567 89</p>
+              </li>
+
+              <li><i class="bi bi-envelope mt-4 fa-2x"></i>
+                  <p>contact@mdbootstrap.com </i> </p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+      </div>
+
+      
+
+    </div>
+
+    <!-- End of .container -->
+
+ 
+
 
 </div>
+
+<?php include './includes/footer.php';?>
 
 
     
